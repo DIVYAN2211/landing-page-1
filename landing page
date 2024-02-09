@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travelify</title>
+  <style>
+   
+ body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+    }
+
+    nav {
+      background-color: #34495e;
+      padding: 0.5em;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5em 1em;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 2em;
+      text-align: center;
+    }
+
+    h1, h2, h3 {
+      color: #3498db;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+    .gallery {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .gallery img {
+      flex: 0 0 25%; /* Adjust the width as needed */
+      cursor: pointer;
+      border: 2px solid #ccc; /* Add a border with a color of your choice */
+      border-radius: 8px; /* Optional: Add rounded corners */
+    }
+footer {
+      background-color: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Dream catcher</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="destination.html">Destinations</a>
+    <a href="contact.html">Contact</a>
+    <a href="#about">About</a> <!-- Updated the link to include the anchor ID -->
+  </nav>
+
+  <section id="about"> <!-- Added an ID to the About section for linking -->
+    <h2>Explore the Beauty of the World</h2>
+    <p>Discover amazing destinations and plan your next adventure with us.</p>
+
+    <p>
+<h3>About us: </h3><br>
+
+Welcome to our travel website, where we're dedicated to making your travel experience seamless and enjoyable. Our services are designed to help you explore the world with ease. Discover a wide range of destinations, find the best deals on flights and accommodations, and plan your dream vacation effortlessly. Whether you're a solo traveler, a couple seeking a romantic getaway, or a family in search of adventure, our user-friendly platform provides personalized recommendations and travel tips. We're here to simplify the planning process and ensure that your journey is filled with unforgettable moments. From booking flights and hotels to discovering exciting activities, our travel website is your go-to resource for all things travel. Let us be your companion on this exciting journey of exploration and discovery.
+ Welcome aboard!</p>
+
+
+    <div class="gallery">
+      <img src="file:///C:/Users/DIVYA%20N/Pictures/Screenshots/Screenshot%202024-01-21%20185602.png" alt="Destination 1" onclick="openModal('file:///C:/Users/DIVYA%20N/Pictures/Screenshots/Screenshot%202024-01-21%20185602.png')">
+      <img src="file:///C:/Users/DIVYA%20N/Pictures/Screenshots/Screenshot%202024-01-21%20185641.png" alt="Destination 2" onclick="openModal('file:///C:/Users/DIVYA%20N/Pictures/Screenshots/Screenshot%202024-01-21%20185641.png')">
+      <img src="file:///C:/Users/DIVYA%20N/Pictures/Screenshots/Screenshot%202024-01-21%20185735.png" alt="Destination 3" onclick="openModal('file:///C:/Users/DIVYA%20N/Pictures/Screenshots/Screenshot%202024-01-21%20185735.png')">
+      <!-- Add more images as needed -->
+    </div>
+<br>
+<br>
+    <!-- Booking form -->
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <br>
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <!-- Testimonial section -->
+  <div class="testimonial">
+    <h3>What Our Customers Say</h3>
+    <p>"Absolutely loved the trip! The views were breathtaking, and the service was excellent. Can't wait for the next adventure!"</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Travelify. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Function to open the modal with the clicked image
+    function openModal(imagePath) {
+      document.getElementById("myModal").style.display = "block";
+      document.getElementById("modalImage").src = imagePath;
+    }
+
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+  </script>
+</body>
+</html>
